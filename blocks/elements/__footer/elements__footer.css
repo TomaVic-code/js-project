@@ -1,6 +1,8 @@
 .elements__footer {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 14px 32px 22px;
+    padding: 24px 14px 24px 22px;
 }

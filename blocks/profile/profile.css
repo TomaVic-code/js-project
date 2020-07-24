@@ -18,11 +18,11 @@
 @media screen and (max-width: 920px){
     .profile {
         box-sizing: border-box;
-        padding: 42px 24px 0;
+        padding: 40px 24px 0;
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 740px){
     .profile {
         flex-direction: column;
         justify-content: center;

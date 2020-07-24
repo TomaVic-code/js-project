@@ -1,7 +1,7 @@
 .elements__like {
     border: none;
     background-color: transparent;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease;
     outline: none;
 }
 
