@@ -1,0 +1,11 @@
+.elements__like {
+    border: none;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.elements__like:hover {
+    cursor: pointer;
+    opacity: .6;
+}
