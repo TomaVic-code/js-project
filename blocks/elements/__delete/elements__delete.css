@@ -1,5 +1,8 @@
-.elements__like {
-    background-image: url(../../../images/like.svg);
+.elements__delete {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background-image: url(../../../images/delete.png);
     background-repeat: no-repeat;
     background-position: center;
     min-width: 24px;
@@ -10,7 +13,7 @@
     outline: none;
 }
 
-.elements__like:hover {
+.elements__delete:hover {
     cursor: pointer;
     opacity: .6;
 }

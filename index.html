@@ -20,69 +20,58 @@
                 </div>
                 <p class="profile__ocupation">Frontend-разработчик</p>
             </div>
-            <button class="profile__add-button"><img src="./images/cross.svg" alt=""></button>
+            <button class="profile__add-button"></button>
         </section>
         <section class="elements">
             <ul class="elements__items">
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="церковь">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Карачаевск</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/fanari.jpg" alt="фонарь">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Кишинев</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/rechika.jpg" alt="речка">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Яремче, Івано-Франківська область, Украина</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/fantan.JPG" alt="Фонтан">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Фонтан Треви</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/iaz.JPG" alt="озеро">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Нассерайт, Австрия</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
-                <li class="elements__item">
-                    <img class="elements__image" src="./images/haus.JPG" alt="Венеция">
-                    <div class="elements__footer">
-                        <h2 class="elements__title">Венеция</h2>
-                        <button class="elements__like" type="button"><img src="./images/like.svg" alt=""></button>
-                    </div>
-                </li>
             </ul>
         </section>
     </main>
     <footer class="footer">
         <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
     </footer>
-    <section class="popup">
+    <section class="popup popup_profile-edit">
         <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <button class="popup__close-btn" type="button"></button>
-            <form class="popup__form">
-                <input class="popup__name-input" type="text" placeholder="Имя">
-                <input class="popup__ocupation-input" type="text" placeholder="Род занятий">
+            <button class="popup__close-btn popup__close-btn_profile" type="button"></button>
+            <form class="popup__form popup__form_profile">
+                <input class="popup__text popup__name-input" type="text" placeholder="Имя">
+                <input class="popup__text popup__ocupation-input" type="text" placeholder="Род занятий">
                 <button class="popup__save-btn" type="submit">Сохранить</button>
             </form>
         </div>
     </section>
+    <section class="popup popup_card-edit">
+        <div class="popup__container">
+            <h2 class="popup__title">Новое место</h2>
+            <button class="popup__close-btn" type="button"></button>
+            <form class="popup__form popup__form_cards">
+                <input class="popup__text popup__place-input" type="text" placeholder="Название">
+                <input class="popup__text popup__image-input" type="text" placeholder="Ссылка на картинку">
+                <button class="popup__save-btn" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+    <section class="popup popup_card-image">
+        <div class="popup__image-container">
+            <button class="popup__close-btn" type="button"></button>
+            <figure class="popup__figure">
+                <img class="popup__image" src="#" alt="изображение">
+                <figcaption class="popup__caption"></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <template class="elements__template">
+        <li class="elements__item">
+            <button class="elements__delete" type="button"></button>
+            <img class="elements__image" src="#" alt="изображение">
+            <div class="elements__footer">
+                <h2 class="elements__title"></h2>
+                <button class="elements__like" type="button"></button>
+            </div>
+        </li>
+    </template>    
 
     <script src="./script/index.js"></script>
 </body>

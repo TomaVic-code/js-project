@@ -1,4 +1,7 @@
 .profile__add-button {
+    background-image: url(../../../images/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #000000;
     border: solid 2px #fff;
     min-width: 150px;
