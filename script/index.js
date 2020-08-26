@@ -109,6 +109,26 @@ function cardSubmitHandler(evt) {
     toggleModalWindow(cardModalWindow);
 }
 
+window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+        imageModalWindow.classList.remove('popup__opened');
+        cardModalWindow.classList.remove('popup__opened');
+        profileModalWindow.classList.remove('popup__opened');
+    }
+});
+
+window.onclick = function(evt) {
+    if (evt.target === imageModalWindow) {
+        imageModalWindow.classList.remove('popup__opened');
+    }
+    if (evt.target === cardModalWindow) {
+        cardModalWindow.classList.remove('popup__opened');
+    }
+    if (evt.target === profileModalWindow) {
+        profileModalWindow.classList.remove('popup__opened');
+    }    
+};
+
 profileFormElement.addEventListener('submit', formSubmitHandler);
 cardFormElement.addEventListener('submit', cardSubmitHandler);
 buttonEditProfile.addEventListener('click', () => {
@@ -125,4 +145,4 @@ closeEditCard.addEventListener('click', () => {
 });
 closeImage.addEventListener('click', () => {
     toggleModalWindow(imageModalWindow);
-})
+});

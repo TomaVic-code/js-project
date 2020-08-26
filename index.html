@@ -34,9 +34,11 @@
         <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
             <button class="popup__close-btn popup__close-btn_profile" type="button"></button>
-            <form class="popup__form popup__form_profile">
-                <input class="popup__text popup__name-input" type="text" placeholder="Имя">
-                <input class="popup__text popup__ocupation-input" type="text" placeholder="Род занятий">
+            <form class="popup__form popup__form_profile" novalidate>
+                <input class="popup__input popup__name-input" id="name-input" type="text" placeholder="Имя" minlength="2" maxlength="40" required>
+                <span class="popup__input-error" id="name-input-error"></span>
+                <input class="popup__input popup__ocupation-input" id="ocupation-input" type="text" placeholder="Род занятий" minlength="2" maxlength="200" required>
+                <span class="popup__input-error" id="ocupation-input-error"></span>
                 <button class="popup__save-btn" type="submit">Сохранить</button>
             </form>
         </div>
@@ -45,9 +47,11 @@
         <div class="popup__container">
             <h2 class="popup__title">Новое место</h2>
             <button class="popup__close-btn" type="button"></button>
-            <form class="popup__form popup__form_cards">
-                <input class="popup__text popup__place-input" type="text" placeholder="Название">
-                <input class="popup__text popup__image-input" type="text" placeholder="Ссылка на картинку">
+            <form class="popup__form popup__form_cards" novalidate>
+                <input class="popup__input popup__place-input" id="place-input" type="text" placeholder="Название" minlength="1" maxlength="30" required>
+                <span class="popup__input-error" id="place-input-error"></span>
+                <input class="popup__input popup__image-input" id="image-input" type="url" placeholder="Ссылка на картинку" required>
+                <span class="popup__input-error" id="image-input-error"></span>
                 <button class="popup__save-btn" type="submit">Сохранить</button>
             </form>
         </div>
@@ -74,5 +78,6 @@
     </template>    
 
     <script src="./script/index.js"></script>
+    <script src="./script/validate.js"></script>
 </body>
 </html>

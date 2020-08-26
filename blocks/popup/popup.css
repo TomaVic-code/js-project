@@ -2,12 +2,16 @@
 @import url("./__image-container/popup__image-container.css");
 @import url("./__image/popup__image.css");
 @import url("./__title/popup__title.css");
-@import url("./__text/popup__text.css");
+@import url("./__input/popup__input.css");
 @import url("./__save-btn/popup__save-btn.css");
 @import url("./__close-btn/popup__close-btn.css");
 @import url("./__image/popup__image.css");
 @import url("./__figure/popup__figure.css");
 @import url("./__caption/popup__caption.css");
+@import url("./__save-btn/_inactive/popup__save-btn_inactive.css");
+@import url("./__form-input_type_error/popup__form-input_type_error.css");
+@import url("./__input-error/popup__input-error.css");
+@import url("./__input-error/_active/popup__input-error_active.css");
 
 .popup {
     display: flex;
